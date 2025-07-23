@@ -1,0 +1,64 @@
+@media only screen and (orientation:landscape)
+{
+
+    .container-photos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 0% 10%;
+        gap: 2rem;
+    }
+img{
+    width: 100%;
+    object-fit: cover;
+    min-height:100%;
+    border-radius: 50%;
+}
+}
+@media only screen and (orientation:portrait)
+{
+    img {
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+img:hover {
+    border-radius: 20%;
+}
+.center {
+    text-align: center;
+}
+body {
+    /*background: radial-gradient(black, grey, whitesmoke, white);*/
+    background: radial-gradient(rgb(200, 185, 10),rgb(10, 163, 94), rgb(24, 168, 197));
+    color: white;
+
+}
+.name {
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0px 10px 10px black;
+    padding: 2%;
+
+}
+.presentation {
+    margin: 0 auto;
+    padding: 4%;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+    text-shadow: 0px 0px 3px yellow;
+}
+#liens {
+    width: 70%;
+    background-color: rgba(255,0,0 0.2);
+    box-shadow: 0px 10px 10px black;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
